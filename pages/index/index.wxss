@@ -1,0 +1,14 @@
+/* pages/search/search.wxss */
+page{
+  background-size:120%,100%;
+  background-image: url("https://i.loli.net/2021/04/11/OynlEtq6QdaT98w.jpg");
+}
+
+.avatar{
+  text-align: center;
+  line-height: 150px;
+  height: 200px;
+  width: 200px;
+  border-radius: 130px;
+  background-image: url("https://i.loli.net/2021/04/12/9ZoH18fq5IrdhFm.png");
+}

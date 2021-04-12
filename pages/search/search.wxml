@@ -1,0 +1,66 @@
+
+<view class="box">
+  
+  <button class="btn" bindtap="popup" data-position="center">慕课</button>
+  <button class="btn" bindtap="popup" data-position="center">自定义</button>
+</view>
+
+
+
+
+<page-container 
+  show="{{show}}"
+  round="{{round}}"
+  overlay="{{overlay}}"
+  duration="{{duration}}"
+  position="{{position}}"
+  close-on-slide-down="{{false}}"
+  bindbeforeenter="onBeforeEnter"
+  bindenter="onEnter"
+  bindafterenter="onAfterEnter"
+  bindbeforeleave="onBeforeLeave"
+  bindleave="onLeave"
+  bindafterleave="onAfterLeave"
+  bindclickoverlay="onClickOverlay"
+  custom-style="{{customStyle}}"
+  overlay-style="{{overlayStyle}}"
+>
+<form bindsubmit="formSubmit">
+  <view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">请输入具体日期（如：2020.02.13）</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" name="day" bindinput="timeInput"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">请输入提醒事件</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" name="sth" bindinput="eventInput"/>
+      </view>
+    </view>
+  </view>
+ 
+  
+    
+
+  <view class="section">
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" name = "time" bindchange="bindTimeChange">
+    <view>点我选择时间</view>
+  </picker>
+      <view class="picker">
+        当前选择: {{time}} 
+      </view>
+</view>
+</view>
+
+  <view class="detail-page">
+    <button class="cu-btn" style="margin: 30rpx 0" type="primary" formType="submit">确认</button>
+    <button style="margin: 30rpx 0" type="primary" formType="reset">重置</button>
+    <button style="margin: 30rpx 0" type="primary" bindtap="exit">退出</button>
+  </view>
+</form>
+</page-container>

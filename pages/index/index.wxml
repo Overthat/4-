@@ -1,0 +1,16 @@
+<!--index1/index1.wxml-->
+
+
+<view>
+<text>事件：{{event}}</text>
+</view>
+
+<view>
+<text>日期：{{day}}</text>
+</view>
+
+<view>
+<text>时间：{{time}}</text>
+</view>
+
+<view class="avatar">123123</view>
